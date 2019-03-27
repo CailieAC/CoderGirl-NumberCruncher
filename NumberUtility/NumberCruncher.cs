@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,7 +12,20 @@ namespace NumberUtility
 
     class NumberCruncher
     {
-
+        public static int SumAllEvens(List <int> numberList)
+        {
+            int sumOfEvens = 0;
+            int count = 0;
+            foreach (int number in numberList)
+            {
+                if(count%2==0)
+                {
+                    sumOfEvens += number;
+                    count++;
+                }
+            }
+            return sumOfEvens;
+        }
 
     }
 }
