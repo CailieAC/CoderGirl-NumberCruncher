@@ -10,15 +10,15 @@ namespace NumberUtility
     //This method should be in a class called NumberCruncher in its own class library called NumberUtility. 
     //Within your console project, create a list with at least 10 integers and call your method on the list.
 
-    class NumberCruncher
+    public class NumberCruncher
     {
-        public static int SumAllEvens(List <int> numberList)
+        public static int SumOfEvenNumbers(List <int> numberList)
         {
             int sumOfEvens = 0;
             int count = 0;
             foreach (int number in numberList)
             {
-                if(count%2==0)
+                if(number%2==0)
                 {
                     sumOfEvens += number;
                     count++;
