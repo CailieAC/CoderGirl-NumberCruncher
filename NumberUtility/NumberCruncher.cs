@@ -15,13 +15,11 @@ namespace NumberUtility
         public static int SumOfEvenNumbers(List <int> numberList)
         {
             int sumOfEvens = 0;
-            int count = 0;
             foreach (int number in numberList)
             {
                 if(number%2==0)
                 {
                     sumOfEvens += number;
-                    count++;
                 }
             }
             return sumOfEvens;
